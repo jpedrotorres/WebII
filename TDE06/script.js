@@ -34,7 +34,8 @@ operacao.addEventListener("click", function() {
 			break
 
 		case 4:
-			resultado= calc1/calc2
+			if(calc2==0) resultado= `0 não`
+			else resultado= calc1/calc2
 			break
 
 		default:
