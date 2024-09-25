@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang= "pt-br">
+<head>
+	<meta charset= "utf-8">
+	<title>TDE 06</title>
+
+	<link rel= "stylesheet" href= "style/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id= "nav-list">
+				<li><a href= "#questao01">Ex001</a>
+				<li><a href= "#questao02">Ex002</a>
+				<li><a href= "#questao03">Ex003</a>
+				<li><a href= "#questao04">Ex004</a>
+				<li><a href= "#questao05">Ex005</a>
+				<li><a href= "#questao06">Ex006</a>
+			<ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id= "context">
+			<p>Este é o primeiro trabalho da disciplina Web II para o aprendizado de DOM</p>
+		</div>
+
+		<!--Questão 01-->
+		<section id= "questao01">
+			<h1>Boas Vindas</h1>
+			<p><label for= "nome">Digite seu nome:</label></p>
+			<p><input type= "text" id= "nome">
+			<input type= "button" id= "enviar" class= "btn" value= "Enviar"></p>
+			<p><output id= "boasVindas"></output></p>
+		</section>
+
+		<!--Questão 02-->
+		<section id= "questao02">
+			<h1>Calculadora</h1>
+
+			<p><label for= "calculadora1">Digite um número:</label></p>
+			<p><input type= "text" id= "calculadora1"></p>
+
+			<p><label for= "calculadora2">Digite um número:</label></p>
+			<p><input type= "text" id= "calculadora2"></p>
+
+			<ul>
+				<li><button data-action= "1" class= "btn02" id= "btnAdicao">+</button>
+				<li><button data-action= "2" class= "btn02" id= "btnSubtracao">-</button>
+				<li><button data-action= "3" class= "btn02" id= "btnMultiplicacao">x</button>
+				<li><button data-action= "4" class= "btn02" id= "btnDivisao">&#247</button>
+			</ul>
+
+			<p><output id= "resultadoCalculo"></output></p>
+		</section>
+
+		<!--Questão 03-->
+		<section id= "questao03">
+			<h1>Provas</h1>
+			<p class= "info">Calcule a média aritmética das notas dos seus alunos!</p>
+
+			<p class= "space"><label for= "nota1">Digite a nota 1 do(a) aluno(a):</label>
+			<input type= "text" id= "nota1"></p>
+
+			<p class= "space"><label for= "nota2">Digite a nota 2 do(a) aluno(a):</label>
+			<input type= "text" id= "nota2"></p>
+
+			<p class= "space"><label for= "nota3">Digite a nota 3 do(a) aluno(a):</label>
+			<input type= "text" id= "nota3"></p>
+
+			<input type= "button" id= "enviaMedia" class= "btn" value= "Calcular">
+
+			<p><output id= "mediaAritmetica"></output></p>
+		</section>
+
+		<!--Questão 04-->
+		<section id= "questao04">
+			<h1>Subtração</h1>
+			<p class= "info">Calcule a subtração entre dois números</p>
+
+			<p><label for= "subNum1">Digite um número:</label></p>
+			<p><input type= "text" id= "subNum1"></p>
+
+			<p><label for= "subNum2">Digite um número:</label></p>
+			<p><input type= "text" id= "subNum2"></p>
+
+			<input type= "button" id= "subtrair" class= "btn" value= "Calcular">
+
+			<p class= "marginTOP">Resultado da subtração é: <output id= "subtracaoDoisNum"></output></p>
+		</section>
+
+		<!--Questão 05-->
+		<section id= "questao05">
+			<h1>Tabuada</h1>
+			<p class= "info">Digite um número para saber sua tabuada!</p>
+
+			<p><label for= "numTabuada">Digite um número:</label></p>
+			<p><input type= "text" id= "numTabuada">
+			<input type= "button" id= "enviaTabuada" class= "btn" value= "Calcular"></p>
+
+			<p><output id= "tabuada"></output></p>
+		</section>
+
+		<!--Questão 06-->
+		<section id= "questao06">
+			<h1>Nada</h1>
+
+			<p><label for= "algumaCoisa">Digite um número:</p>
+			<p><input type= "text" id= "algumaCoisa" pattern= "[0-9]+">
+
+			<input type= "button" id= "calculaNada" class= "btn" value= "Calcular"></p>
+
+			<p><output id= "absolutamenteNada"></p></p>
+		</section>
+	</main>
+
+	<script src= "script.js"></script>
+</body>
+</html>
