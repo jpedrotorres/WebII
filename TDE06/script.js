@@ -9,13 +9,13 @@ botaoEnvio.addEventListener('click', function() {
 //Questão 02
 calculadora01= document.querySelector("#calculadora1")
 calculadora02= document.querySelector("#calculadora2")
-operacao= document.querySelector(".btn02")
+operacao= document.querySelectorAll(".btn02")
 resultadoOut= document.querySelector("#resultadoCalculo")
 
-operacao.addEventListener("click", function() {
+operacao.forEach(element=> element.addEventListener("click", evt=> {
 	calc1= Number(calculadora01.value)
 	calc2= Number(calculadora02.value)
-	op= Number(operacao.dataset.action)
+	op= Number(element.dataset.action)
 
 	console.log(op)
 	var resultado
@@ -43,7 +43,7 @@ operacao.addEventListener("click", function() {
 	}
 
 	return resultadoOut.innerHTML= `O resultado é: ${resultado}`
-})
+}))
 
 //Questão 03
 adressN1= document.querySelector("#nota1")
